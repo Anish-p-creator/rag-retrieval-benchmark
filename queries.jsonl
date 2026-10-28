@@ -1,0 +1,40 @@
+{"query": "Which index lets you scan a range of keys by walking linked leaf pages?", "gold": "btree"}
+{"query": "Why can't a hash-based index answer a BETWEEN query?", "gold": "hash_index"}
+{"query": "index on (a, b) not used when filtering only on column b", "gold": "btree"}
+{"query": "How do readers avoid blocking writers by keeping old row versions?", "gold": "mvcc"}
+{"query": "what does VACUUM clean up", "gold": "mvcc"}
+{"query": "growing phase and shrinking phase of lock acquisition", "gold": "two_pl"}
+{"query": "two transactions waiting on each other's locks forever", "gold": "two_pl"}
+{"query": "how does a database redo committed changes after a power failure", "gold": "wal"}
+{"query": "why must the log record hit disk before the data page", "gold": "wal"}
+{"query": "prevent selling more units than are in stock during a flash sale", "gold": "redis_atomic"}
+{"query": "single-threaded command execution makes DECR safe", "gold": "redis_atomic"}
+{"query": "update with a version check and retry if zero rows changed", "gold": "optimistic"}
+{"query": "why do retries explode under heavy contention without locks", "gold": "optimistic"}
+{"query": "during a network split, choose between correct data and staying online", "gold": "cap"}
+{"query": "adding a cache server should only move a small fraction of keys", "gold": "consistent_hashing"}
+{"query": "virtual nodes on a hash ring", "gold": "consistent_hashing"}
+{"query": "autoscaler shows unknown targets and replicas never change", "gold": "hpa"}
+{"query": "scale the number of pods when CPU usage goes up", "gold": "hpa"}
+{"query": "alert me before the disk actually runs out of space", "gold": "predict_linear"}
+{"query": "extrapolate a metric trend into the future in Prometheus", "gold": "predict_linear"}
+{"query": "how do client and server agree on keys for an encrypted HTTPS connection", "gold": "tls"}
+{"query": "certificate renewal with Certbot", "gold": "tls"}
+{"query": "ranking function where repeated terms give diminishing returns", "gold": "bm25"}
+{"query": "why keyword search fails on synonyms", "gold": "bm25"}
+{"query": "stop an LLM from making things up by giving it source documents", "gold": "rag"}
+{"query": "the model can only use chunks that the retriever actually found", "gold": "rag"}
+{"query": "keep a request quota per user per minute and return 429", "gold": "rate_limit"}
+{"query": "coordinator asks every participant to vote before a distributed transaction finishes", "gold": "two_pc"}
+{"query": "participants stuck holding locks because the coordinator died", "gold": "two_pc"}
+{"query": "copy changes to a standby server by streaming the journal", "gold": "replication"}
+{"query": "promote a read replica when the main server fails", "gold": "replication"}
+{"query": "same query returns a new row the second time inside one transaction", "gold": "isolation"}
+{"query": "which anomaly does serializable prevent that repeatable read allows", "gold": "isolation"}
+{"query": "find passages with similar meaning even if they share no words", "gold": "vector_search"}
+{"query": "approximate nearest neighbour graph index", "gold": "vector_search"}
+{"query": "spread incoming traffic over several backend machines", "gold": "load_balancing"}
+{"query": "lookups are always by exact key and never by range", "gold": "hash_index"}
+{"query": "make sure nothing committed is lost if the machine crashes", "gold": "wal"}
+{"query": "both datacenters keep taking writes when the link between them breaks", "gold": "cap"}
+{"query": "reader sees a frozen picture of the data from when it began", "gold": "mvcc"}
